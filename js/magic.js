@@ -34,6 +34,7 @@
 
         // for the studio...remove their style they have created...
         jQuery(editors[i]).removeClass("cm-s-snc");
+        jQuery(editors[i]).removeClass("cm-s-snc_readonly"); // the vim plugin won't go out of preview mode if it is readonly
 
         // get the CodeMirror instances
         var cm = editors[i].CodeMirror;
