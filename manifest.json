@@ -1,0 +1,16 @@
+
+{
+  "name": "ServiceNow Vim",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Add Vim like functionality to ServiceNow",
+  "content_scripts": [{
+    "all_frames" : true,
+    "matches": ["*://*.service-now.com/*"],
+    "js": ["js/inject.js","js/jquery-1.12.4.min.js"],
+    "css": ["css/monokai.css"]
+  }],
+  "web_accessible_resources": [
+    "js/magic.js"
+  ]
+}
